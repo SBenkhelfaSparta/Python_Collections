@@ -1,16 +1,29 @@
-# This is a sample Python script.
+# Create a shopping list
+# Syntax [] - name_of_list = ["items in list"]
+shoppingList = ["apples", "egges", "chocolate", "tea", "bread"]
+print(shoppingList)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Checking what type shoppingList is
+print(type(shoppingList))
 
+# How to access chocolate
+print(shoppingList[2])  # Return 3rd item in shoppingList list
+print(shoppingList[-1])  # Display last item from list
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# How can I replace an item in the list
+shoppingList[0] = "mangos"
+print(shoppingList)
 
+# Add item to shopping list
+shoppingList.append("Tuna")
+print(shoppingList)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+shoppingList.remove("Tuna")
+print(shoppingList)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Tuples
+essentials = ("paracetamol", "milk", "water", "butter")
+#essentials.pop(1) # This returns an Error as you can't change the values in tuples
+
+# Return items 1 to 2 (last value is exclusive)
+print(essentials[1:3])
